@@ -5,7 +5,7 @@ import cv2
 
 # Use the same script for MOT16
 # DATA_PATH = '../../data/mot16/'
-DATA_PATH = '../../data/mot17/'
+DATA_PATH = '../../data/mot20/'
 OUT_PATH = DATA_PATH + 'annotations/'
 SPLITS = ['train_half', 'val_half', 'train', 'test']
 HALF_VIDEO = True
@@ -26,7 +26,7 @@ if __name__ == '__main__':
     for seq in sorted(seqs):
       if '.DS_Store' in seq:
         continue
-      if 'mot17' in DATA_PATH and (split != 'test' and not ('FRCNN' in seq)):
+      if 'mot20' in DATA_PATH and (split != 'test'):
         continue
       video_cnt += 1
       out['videos'].append({
