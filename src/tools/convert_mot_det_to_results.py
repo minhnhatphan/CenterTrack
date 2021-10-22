@@ -2,7 +2,7 @@ import json
 import numpy as np
 import os
 from collections import defaultdict
-split = 'val_half'
+split = 'train'
 
 DET_PATH = '../../data/mot17/train'
 ANN_PATH = '../../data/mot17/annotations/{}.json'.format(split)
